@@ -359,10 +359,10 @@ private createBricks(): void {
       const eventPayload = e.data;
       if (eventPayload.type === 'devvit-message') {
         console.log('message received from devvit', eventPayload);
-        var message = eventPayload.data.message || {};
-        
+        var message = eventPayload.data.message || {};        
         if (message.type == 'startGame') {
-          this.stats = message.data;
+          this.stats = message.data || { wins: 0, losses: 0 };
+          console.log(this.stats);
           this.statsText.text = this.getStatsText();
         }
       }

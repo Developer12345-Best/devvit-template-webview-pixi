@@ -15,6 +15,7 @@ Devvit.addMenuItem({
   location: 'subreddit',
   forUserType: 'moderator',
   onPress: addMenuItem,
+  
 });
 
 // Add a post type definition
