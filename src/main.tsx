@@ -13,6 +13,7 @@ Devvit.configure({
 Devvit.addMenuItem({
   label: 'Webview with Pixi',
   location: 'subreddit',
+  forUserType: 'moderator',
   onPress: addMenuItem,
 });
 
